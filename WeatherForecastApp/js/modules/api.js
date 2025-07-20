@@ -1,5 +1,5 @@
 export async function fetchWeather(city) {
-    const apiKey = '';
+    const apiKey = ${{ secrets.API_KEY }};
     const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
