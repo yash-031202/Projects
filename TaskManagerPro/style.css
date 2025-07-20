@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #6200ea;
+  color: white;
+}
+
+form, .filters {
+  padding: 1rem;
+}
+
+input, select, button {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task.high { border-left: 5px solid red; }
+.task.medium { border-left: 5px solid orange; }
+.task.low { border-left: 5px solid green; }

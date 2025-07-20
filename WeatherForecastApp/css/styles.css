@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+#app {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        display: block;
+        width: 100%;
+    }
+}
