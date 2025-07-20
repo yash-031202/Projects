@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout Code
+      - name:  Checkout Code
         uses: actions/checkout@v3
 
-      - name: 🔑 Replace API Key Placeholder in JS Files
+      - name:  Replace API Key Placeholder in JS Files
         run: |
           find . -type f -name "*.js" -exec sed -i "s|__API_KEY__|${{ secrets.API_KEY }}|g" {} \;
 
-      - name: ✅ Confirm Replacement
+      - name: Confirm Replacement
         run: grep -r "appid=" .
